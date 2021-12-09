@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevVirgil Portfolio Website</title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/7976aed703.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.gif" alt="" /></a>
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#work" class="nav__link">My Work</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        <strong>Tic Tac Toe</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">Game</p>
+      <img src="images/tictactoe-title.jpg" alt="" class="project__img" />
+    </section>
+
+    <div class="portfolio-item-individual">
+      <p>
+        This is a simple game of Tic Tac Toe. For this project, I have used
+        HTML/CSS, but mostly, all the functions of the game have been coded
+        using JavaScript.
+      </p>
+      <p>
+        The game is played on a 3x3 grid by two players, who alternately place
+        the marks X and O in one of the nine spaces in the grid.
+      </p>
+      <p>
+        The first player to get 3 of their marks in a row (up, down, across, or
+        diagonally) is the winner.
+      </p>
+      <p>
+        When all 9 squares are full, the game is over. If no player has 3 marks
+        in a row, the game ends in a tie.
+      </p>
+      <a href="https://virgilpopa.github.io/clevergarage/"
+        ><img src="images/clevergarage-main.gif" alt=""
+      /></a>
+      <p>
+        The functions implemented in this game allow the participants to play
+        the game until one of the player wins 5 rounds or until the Reset button
+        is pressed.
+      </p>
+      <p>
+        When a round is won or ends in a draw, the players have to press the
+        button New Round to keep playing or they can decide to start a new game.
+        If the Reset button is pressed, the scores are reset to 0 and the
+        players can start a new game.
+      </p>
+
+      <p>
+        You can access the website by clicking the image above, or you see the
+        code on my Github profile,
+        <a
+          href="https://github.com/virgilpopa/clevergarage.github.io"
+          class="anchor"
+          >here</a
+        >.
+      </p>
+      <p>
+        Alternatively, you can use this
+        <a href="index.html#contact" class="anchor">contact form</a>
+        and I will try to answer in a timely manner.
+      </p>
+      <div class="home__btn">
+        <a href="index.html" class="btn">Homepage</a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:popa_virgil2000@yahoo.com" class="footer-link"
+        >popa_virgil2000@yahoo.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/virgiliu-popa/"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/virgilpopa">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevVirgil Portfolio Website</title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/7976aed703.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.gif" alt="" /></a>
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Virgiliu Popa</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">FRONT-END DEV</p>
+      <img
+        src="images/virgilpopa.jpg"
+        alt="a picture of Virgil Popa with sunglasses"
+        class="intro__img"
+      />
+    </section>
+
+    <!--Services-->
+    <section class="my-services" id="services">
+      <h1 class="section__title section__title--services">What I do</h1>
+      <div class="services">
+        <div class="service">
+          <h3 class="section__subtitle section__subtitle--services">
+            Web Design + Development
+          </h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Worpress</li>
+          </ul>
+          <p></p>
+        </div>
+        <!--close service-->
+        <div class="service">
+          <h3 class="section__subtitle section__subtitle--services">
+            Software Development
+          </h3>
+          <ul>
+            <li>Java</li>
+          </ul>
+        </div>
+        <!--close service-->
+        <div class="service">
+          <h3 class="section__subtitle section__subtitle--services">
+            Databases
+          </h3>
+          <ul>
+            <li>Microsoft Access</li>
+            <li>MySQL queries</li>
+          </ul>
+        </div>
+        <!--close service-->
+      </div>
+      <!--close services-->
+      <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Graduate Web Developer
+      </p>
+      <div class="about-me__body">
+        <p>
+          I have recently finished HNC Computing Level 4, and was awarded
+          Distinction based on numerous projects and assignments for each
+          module.
+        </p>
+        <p>
+          These modules include: Web Design, Software Development, Networking,
+          Project Management, Databases, and Security.
+        </p>
+        <p>
+          Whilst having a full time job as a health care assistant, I am
+          devoting all my spare time to learning and improving my developing
+          skills.
+        </p>
+        <p>
+          Coding is my passion, especially when it comes to developing websites.
+          Which is why I have also acquired a CIW Web Design Specialist
+          certificate.
+        </p>
+        <p>
+          I am also currently self-learning and improving my JavaScript skills.
+          I take every effort to keep abreast of current technology and embrace
+          any opportunity to undertake workplace training.
+        </p>
+      </div>
+      <img
+        src="images/virgilpopa-about.jpg"
+        alt="a picture of Virgiliu Popa smiling"
+        class="about-me__img"
+      />
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        Projects I have been part of
+      </p>
+
+      <div class="portfolio">
+        <a href="tictactoe-project.html" class="portfolio__item">
+          <img
+            src="images/tictactoe-mywork.jpg"
+            alt=""
+            class="portfolio__img"
+          />
+        </a>
+        <a href="clevergarage-project.html" class="portfolio__item">
+          <img
+            src="images/clevergarage-mywork.jpg"
+            alt=""
+            class="portfolio__img"
+          />
+        </a>
+        <a href="#" class="portfolio__item">
+          <img src="" alt="" class="portfolio__img" />
+        </a>
+        <a href="#" class="portfolio__item">
+          <img src="" alt="" class="portfolio__img" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-me" id="contact">
+      <h2 class="section__title section__title--contact">Contact</h2>
+
+      <form
+        class="contact__form"
+        name="inputform"
+        method="post"
+        action="mailto:popa_virgil2000@yahoo.com"
+        enctype="text/plain"
+        onsubmit="return validate_form();"
+      >
+        <p>
+          <label for="fname"></label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your first name..."
+          />
+        </p>
+        <p>
+          <label for="lname"></label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name..."
+          />
+        </p>
+
+        <p>
+          <label></label>
+          <input type="text" name="email" placeholder="Your email address..." />
+        </p>
+        <p>
+          <label for="subject"></label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write message here..."
+            rows="10"
+            cols="40"
+          ></textarea>
+        </p>
+        <p>
+          <label>
+            <input type="submit" value="Submit" />
+          </label>
+          <label>
+            <input type="reset" value="Reset" />
+          </label>
+        </p>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:popa_virgil2000@yahoo.com" class="footer-link"
+        >popa_virgil2000@yahoo.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/virgiliu-popa/"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/virgilpopa">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
