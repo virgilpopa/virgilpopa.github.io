@@ -417,6 +417,16 @@ header {
   opacity: 0.75;
 }
 
+@media screen and (max-width: 400px) {
+  .portfolio__item {
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+  .portfolio {
+    width: 100%;
+  }
+}
+
 /*Contact*/
 
 .contact-me {
